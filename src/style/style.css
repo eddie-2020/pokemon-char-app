@@ -12,24 +12,29 @@ body {
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
   position: fixed;
   width: 100%;
-  top: 0px;
+  top: 0;
 }
+
 .nav-bar .list-container {
   display: flex;
 }
+
 .nav-bar .list-item {
   list-style-type: none;
   margin: 20px;
   margin: auto;
 }
+
 .nav-bar .anchor {
   font-size: 17px;
   text-decoration: none;
   color: pink;
 }
+
 .nav-bar .anchor:hover {
   color: #fff;
 }
+
 .nav-bar .Current-logo {
   width: 10px;
   cursor: pointer;
@@ -41,6 +46,7 @@ body {
   padding: 30px;
   border-radius: 100px;
 }
+
 .nav-bar .Current-logo .logo {
   width: 30px;
   color: #fff;
@@ -56,6 +62,7 @@ img {
   margin: 30px;
   padding: 10px;
 }
+
 img:hover {
   transition: 2s;
   transform: translateY(20px);
@@ -117,5 +124,3 @@ li {
   padding: 10px;
   text-align: right;
 }
-
-/*# sourceMappingURL=style.css.map */

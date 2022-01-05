@@ -12,20 +12,23 @@ body {
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
   position: fixed;
   width: 100%;
-  top: 0px;
+  top: 0;
 
   .list-container {
     display: flex;
   }
+
   .list-item {
     list-style-type: none;
     margin: 20px;
     margin: auto;
   }
+
   .anchor {
     font-size: 17px;
     text-decoration: none;
     color: pink;
+
     &:hover {
       color: #fff;
     }
@@ -49,4 +52,3 @@ body {
     }
   }
 }
-

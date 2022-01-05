@@ -5,41 +5,41 @@ const displayPokemon = async (pokemon) => {
     fetch(pokes.url)
       .then((response) => response.json())
       .then(async (pokesData) => {
-        const cards = document.getElementById("card-view");
+        const cards = document.getElementById('card-view');
         const bokumonVarieties = pokesData.types;
         const bokumonsImgs = pokesData.sprites.other;
-        const reservedList = document.createElement("li");
-        reservedList.classList.add("card-items");
-        const pokesImg = document.createElement("img");
+        const reservedList = document.createElement('li');
+        reservedList.classList.add('card-items');
+        const pokesImg = document.createElement('img');
         pokesImg.setAttribute(
-          "src",
-          `${bokumonsImgs["official-artwork"].front_default}`
+          'src',
+          `${bokumonsImgs['official-artwork'].front_default}`,
         );
-        pokesImg.setAttribute("alt", "pokemon");
+        pokesImg.setAttribute('alt', 'pokemon');
 
-        const hearder1 = document.createElement("h2");
+        const hearder1 = document.createElement('h2');
         hearder1.textContent = `${pokesData.name}`;
 
-        const likeSection = document.createElement("span");
-        likeSection.classList = "likeSect";
+        const likeSection = document.createElement('span');
+        likeSection.classList = 'likeSect';
 
-        const likeImg = document.createElement("i");
-        likeImg.classList.add("fas", "fa-heart", "heart");
-        likeImg.setAttribute("id", `${pokesData.name}`);
+        const likeImg = document.createElement('i');
+        likeImg.classList.add('fas', 'fa-heart', 'heart');
+        likeImg.setAttribute('id', `${pokesData.name}`);
 
-        const spanEle = document.createElement("div");
-        spanEle.setAttribute("id", "like");
+        const spanEle = document.createElement('div');
+        spanEle.setAttribute('id', 'like');
 
-        const listContainer = document.createElement("ul");
+        const listContainer = document.createElement('ul');
 
         bokumonVarieties.forEach((pokemon) => {
           listContainer.innerHTML += `<li> ${pokemon.type.name} </li>`;
         });
-        const commentBtn = document.createElement("button");
-        commentBtn.setAttribute("type", "button");
-        commentBtn.classList.add(pokesData.name, "btn");
-        commentBtn.innerHTML = "comment";
-        commentBtn.addEventListener("click", () => {
+        const commentBtn = document.createElement('button');
+        commentBtn.setAttribute('type', 'button');
+        commentBtn.classList.add(pokesData.name, 'btn');
+        commentBtn.innerHTML = 'comment';
+        commentBtn.addEventListener('click', () => {
           // This is for the comment modal...
         });
         reservedList.appendChild(pokesImg);
