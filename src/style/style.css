@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #efefef;
+  font-family: cursive;
+}
+
+.nav-bar {
+  background-color: #333;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
+  padding: 5px;
+}
+.nav-bar .list-container {
+  display: flex;
+}
+.nav-bar .list-item {
+  list-style-type: none;
+  margin: 20px;
+  margin: auto;
+}
+.nav-bar .anchor {
+  font-weight: 700;
+  font-size: 17px;
+  text-decoration: none;
+  color: pink;
+}
+.nav-bar .anchor:hover {
+  color: #fff;
+}
+.nav-bar .Current-logo {
+  width: 50px;
+  font-size: 13px;
+  border: 2px solid pink;
+  padding: 15px;
+  border-radius: 100px;
+}
+.nav-bar .Current-logo .logo {
+  width: 30px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
