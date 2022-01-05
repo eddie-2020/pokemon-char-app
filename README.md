@@ -17,7 +17,7 @@ Do you ever thought of just using webpack for all your projects ?, that's actual
 To get a local copy up and running follow these simple example steps.
 
 Prerequisites
-Setup: Clone https://github.com/oluyaratosin123/Leaderboard-Setup-Project.git into the destination folder of your local machine.
+Setup: Clone https://github.com/oluyaratosin123/Repeat-Kanban-Board.git into the destination folder of your local machine.
 Install: Install linters with the npx commands given in the linters.yml file.
 Usage: N/A
 Run tests: Run syntax tests with the use of the npx commands given in the linters.yml file.
