@@ -8,7 +8,7 @@ Do you ever thought of just using webpack for all your projects ?, that's actual
 
 # Built With
   1. HTML
-  2. CSS, Javascript
+  2. scss, Javascript
   3. Linters (Webhint, Stylelint, Lighthouse).
   4. Webpack Module Bundler.
 
