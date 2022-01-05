@@ -2,7 +2,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Additional description about the project and its features.
-Do you ever thought of just using webpack for all your projects ?, that's a really nice decision. Here is our webpack setup for our capstone project
+Do you ever thought of just using webpack for all your projects ?, that's actually a really nice decision. Here is our webpack setup for our capstone project
 
 ![](/src/assets/setup.PNG)
 
@@ -17,7 +17,7 @@ Do you ever thought of just using webpack for all your projects ?, that's a real
 To get a local copy up and running follow these simple example steps.
 
 Prerequisites
-Setup: Clone https://github.com/oluyaratosin123/Leaderboard-Setup-Project.git into the destination folder of your local machine.
+Setup: Clone https://github.com/oluyaratosin123/Repeat-Kanban-Board.git into the destination folder of your local machine.
 Install: Install linters with the npx commands given in the linters.yml file.
 Usage: N/A
 Run tests: Run syntax tests with the use of the npx commands given in the linters.yml file.
