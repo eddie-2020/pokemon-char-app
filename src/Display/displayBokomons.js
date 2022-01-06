@@ -57,7 +57,7 @@ const displayPokemon = async (pokemon) => {
         likeImg.addEventListener('click', async () => {
           await postAllLikes(likeImg.id);
           await fetchAllLikes(pokesData, spanEle);
-        })
+        });
       });
   });
 };
