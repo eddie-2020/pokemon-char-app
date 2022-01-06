@@ -1,4 +1,5 @@
 import fetchAllLikes from './responseLike';
+import postAllLikes from './newLikeAddOn';
 
 const displayPokemon = async (pokemon) => {
   pokemon.forEach((pokes) => {
@@ -52,6 +53,11 @@ const displayPokemon = async (pokemon) => {
         reservedList.appendChild(commentBtn);
         cards.appendChild(reservedList);
         await fetchAllLikes(pokesData, spanEle);
+
+        likeImg.addEventListener('click', async () => {
+          await postAllLikes(likeImg.id);
+          await fetchAllLikes(pokesData, spanEle);
+        })
       });
   });
 };
