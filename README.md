@@ -4,11 +4,11 @@
 # Additional description about the project and its features.
 Do you ever thought of just using webpack for all your projects ?, that's actually a really nice decision. Here is our webpack setup for our capstone project
 
-![](/src/assets/setup.PNG)![](/src/assets/addHeader.PNG)![](/src/assets/footer.PNG)
+![](/src/assets/setup.PNG)![](/src/assets/addHeader.PNG)![](/src/assets/footer.PNG)![](/src/assets/BokomonApi.PNG)
 
 # Built With
   1. HTML
-  2. CSS, Javascript
+  2. scss, Javascript
   3. Linters (Webhint, Stylelint, Lighthouse).
   4. Webpack Module Bundler.
 
