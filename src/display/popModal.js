@@ -53,7 +53,7 @@ const popWindow = (pokemon) => {
     .then((response) => response.json())
     .then((locations) => {
       if (locations.length > 1) {
-        location.innerHTML = locations[0].location_area.name || 'Evolution';
+        locations.innerHTML = locations[0].location_area.name || 'Evolution';
       } else {
         locationContentType.innerHTML = 'Evolution';
       }
