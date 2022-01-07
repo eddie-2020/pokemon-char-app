@@ -126,7 +126,7 @@ const popWindow = (pokemon) => {
     } else {
       postAllComments(inputName.value, textArea.value, pokemon.name)
         .then(() => (getAllComments(pokemon.name)).then(() => showAllComments()));
-        inputName.classList.remove('danger');
+      inputName.classList.remove('danger');
       textArea.classList.remove('danger');
       addComment.reset();
     }

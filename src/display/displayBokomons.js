@@ -32,7 +32,7 @@ const displayBokomons = async (pokemon) => {
         spanEle.setAttribute('id', 'like');
 
         const ul = document.createElement('ul');
-        ul.classList.add('unordered')
+        ul.classList.add('unordered');
         pokesTypes.forEach((pokemon) => {
           ul.innerHTML += `<li class="pokesType">${pokemon.type.name}</li>`;
         });
