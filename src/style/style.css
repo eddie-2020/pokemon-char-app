@@ -7,38 +7,283 @@ body {
 }
 
 .nav-bar {
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.966);
   border: 2px solid rgba(255, 192, 203, 0.418);
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
-  padding: 5px;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
+
 .nav-bar .list-container {
   display: flex;
 }
+
 .nav-bar .list-item {
   list-style-type: none;
   margin: 20px;
   margin: auto;
 }
+
 .nav-bar .anchor {
   font-size: 17px;
   text-decoration: none;
   color: pink;
 }
+
 .nav-bar .anchor:hover {
   color: #fff;
 }
+
 .nav-bar .Current-logo {
-  width: 50px;
+  width: 10px;
+  cursor: pointer;
   font-size: 13px;
   border: 2px solid pink;
-  padding: 15px;
+  background-image: url(/src/assets/Bokomon.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 30px;
   border-radius: 100px;
 }
+
 .nav-bar .Current-logo .logo {
   width: 30px;
   color: #fff;
   text-decoration: none;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 6px 6px 6px rgba(255, 192, 203, 0.692);
+  margin: 10px;
+  padding: 10px;
+}
+
+img:hover {
+  transition: 2s;
+  transform: translateY(20px);
+}
+
+li {
+  list-style-type: none;
+}
+
+#card-view {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.btn {
+  margin-bottom: 40px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 250px;
+  border-radius: 5px;
+  border: 2px solid #007bff;
+  font-family: cursive;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(51, 51, 51, 0.774);
+  color: #fff;
+  transition: 1s;
+}
+
+.card-items {
+  background-color: rgba(51, 51, 51, 0.158);
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.heart {
+  color: #dc3545;
+  cursor: pointer;
+  font-size: 20px;
+  width: 50px;
+}
+
+.unordered {
+  display: flex;
+  justify-content: space-around;
+  background-color: #efefef;
+  font-size: 18px;
+  padding: 10px;
+  margin: 25px;
+  border-radius: 5px;
+}
+
+.cardSection {
+  background-color: rgba(128, 128, 128, 0.205);
+  border-radius: 5px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+.modalPopUp {
+  font-family: cursive;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.288);
+}
+
+.modalPopUp h4 {
+  font-size: 20px;
+}
+
+.modal-frame {
+  box-shadow: none;
+}
+
+.modal-pop-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  width: 450px;
+  height: 85vh;
+  padding-bottom: 20px;
+  margin: auto;
+  margin-top: 35px;
+  border-radius: 5px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.image-frame {
+  position: relative;
+  width: 100%;
+}
+
+.modalClose {
+  position: fixed;
+  top: 50px;
+  right: 480px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #333;
+  transition: 0.3s;
+}
+
+.modalClose:hover {
+  color: #28a745;
+}
+
+.modal-image-sect {
+  display: block;
+  width: 250px;
+  margin: auto;
+}
+
+.pokes-name {
+  font-size: 32px;
+}
+
+.type-list-cards {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  font-family: sans-serif;
+  width: 50%;
+}
+
+.add-some-comments {
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  width: 90%;
+}
+
+button {
+  padding: 10px;
+  font-family: cursive;
+  font-weight: 700;
+  font-size: 15px;
+  border: 2px solid #007bff83;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modalPopUp input,
+.modalPopUp textarea {
+  font-family: cursive;
+  margin-bottom: 10px;
+  width: 250px;
+  padding: 10px;
+  display: block;
+}
+
+.modalPopUp textarea {
+  width: 250px;
+  height: 100px;
+}
+
+.danger {
+  border-color: #dc3545;
+}
+
+.error {
+  text-align: center;
+  color: maroon;
+  width: 80%;
+  height: 40px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.justify {
+  justify-content: center !important;
+}
+
+.viewComments {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #efefef;
+}
+
+.dateCreated {
+  font-size: 15px;
+  font-weight: 700;
+  color: #007bff;
+  width: 100px;
+}
+
+.viewName {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: sans-serif;
+  display: flex;
+}
+
+.commentDetails {
+  font-size: 14px;
+}
+
+.newComment {
+  width: 150px;
+}
+
+.newComment:hover {
+  background-color: rgba(51, 51, 51, 0.774);
+  color: #fff;
+  transition: 1s;
 }
 
 .footer-content {
@@ -48,6 +293,8 @@ body {
 
 .license {
   font-size: 15px;
+  padding: 20px;
+  border-top: 2px solid #333;
 }
 
 .extra-content {
@@ -55,5 +302,3 @@ body {
   padding: 10px;
   text-align: right;
 }
-
-/*# sourceMappingURL=style.css.map */
