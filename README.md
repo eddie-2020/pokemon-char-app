@@ -24,7 +24,7 @@ Run tests: Run syntax tests with the use of the npx commands given in the linter
 Deployment: Run index.html on your local server.
 
 # Live Version
-Live Demo Link: 
+Live Demo Link: https://oluyaratosin123.github.io/Repeat-Kanban-Board/
 
 # Authors
 
