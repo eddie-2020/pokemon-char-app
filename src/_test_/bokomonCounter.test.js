@@ -1,4 +1,4 @@
-import { counter } from '../Display/counter';
+import counter from '../Display/counter';
 
 describe('This is to check the lenght of all pokemons on our list', () => {
   test('Six pokemons', () => {

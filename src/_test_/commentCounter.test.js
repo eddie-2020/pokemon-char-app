@@ -1,7 +1,7 @@
 /**
  * @jest-environment jsdom
  */
-import { commentCounter } from '../Display/counter';
+import commentCounter from '../Display/counter';
 
 describe('Check comment length for a pokemon card', () => {
   test('3 comments', () => {
