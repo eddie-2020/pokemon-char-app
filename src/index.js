@@ -1,7 +1,6 @@
 import fetchApiData from './API/responseApiData';
 import displayBokomons from './Display/displayBokomons';
-
-import counter from './Display/counter';
+import { counter } from './Display/counter';
 import './style/style.css';
 
 const pokeTitle = document.getElementById('bokomonTitle');
